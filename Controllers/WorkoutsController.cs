@@ -10,6 +10,11 @@ namespace WorkoutsAPI.Controllers{
     [ApiController]
     public class WorkoutsController : ControllerBase
     {
-        
+        private readonly WorkoutService _workoutService;
+
+        public WorkoutsController(WorkoutService workoutService)
+        {
+            _workoutService = workoutService;
+        }
     }
 }
